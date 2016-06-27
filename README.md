@@ -1,10 +1,8 @@
 # ProjectTwo_GA
 
 
-## MVP / Necessary features
+## MVP / Necessary features:
 
-
-A basic implementation of this project must include:
 
 - An interactive board which renders on page load.
 
@@ -16,7 +14,7 @@ A basic implementation of this project must include:
 
 
 
-## Intermediate features
+## Intermediate features:
 
 
 - The game should end when there is a winner, or if the game is a tie.
@@ -31,7 +29,7 @@ A basic implementation of this project must include:
 
 
 
-## Strech goals/ Advanced features
+## Strech goals/ Advanced features:
 
 
 - An option to play vs. a computer with AI
@@ -42,5 +40,22 @@ A basic implementation of this project must include:
 
 
 ------------------------------------------------------------------------------------------------------------------------------
+
+
+## User story:
+
+Once link is open, page contents will load.  
+
+Player one and two will have the opportunity to enter their names which will display on screen.  
+
+First player will default to the X marker while Player 2 will be Y.  
+
+Each player will be able to choose an open space on the board to place their marker.  One time, each turn.  
+
+Once one of either players has reached 3 markers in a row, that player is declared the winner.
+
+
+------------------------------------------------------------------------------------------------------------------------------
+
 
 ## Resources and credits
