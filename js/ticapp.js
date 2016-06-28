@@ -2,6 +2,7 @@ window.onload = function() {
 	document.querySelector('#reset-button').addEventListener('click', function(startUp) {
 		console.log(startUp);
 		console.log(this);
+		prompt("Player One, please type your name");
 	})
 }
 
@@ -11,18 +12,16 @@ window.onload = function() {
 //game begins with player one defaulting to x
 
 
-//////////////////
-
-// var arrai = ['A1','A2','A3','B1','B2','B3','C1','C2','C3']
-// var x = [""]
-// var y = [""]
+var arrai = ['A1','A2','A3','B1','B2','B3','C1','C2','C3']
+var x = [""]
+var y = [""]
 
 
-// var resetit = document.getElementById('reset')
-// 	resetit.addEventListener('click', function() {
-// 	});
-// 	for (var i = 0; i < arrai.length; i++);
-// 	 // Math.floor(Math.random() 
+
+
+
+
+
 
 
 // CONSTRUCTOR FUNCTIONS TRIAL ///////////////////////////
