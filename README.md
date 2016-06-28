@@ -48,10 +48,6 @@
 1. As a user, when I open the page, I want to be able to see the game board and a start button, so that I can begin the game
 
 2. As a user, I want to be able to enter my name and have it display on the page, so that I know whether or not it is my turn
-  
-<!-- 
-2a. [Technical] How am i getting user input?
-2b. [Technical] how am i alerting the user that it’s there turn. css? an image? -->
  
 3. Less of a user a story and more of a technical design choice
  
