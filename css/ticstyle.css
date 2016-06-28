@@ -7,7 +7,7 @@ header {
 
 }
 
-#reset-button{
+#start-button{
 	margin-left: 47%;
 }	
 
@@ -28,4 +28,16 @@ ul li {
 	padding-left: 30%;
 	text-decoration: none;
 }
+
+
+
+
+
+
+
+/******** NOT IN USE ********************************************************************************/
+
+/*.ex {
+	background-image: url(http://etc.usf.edu/presentations/extras/letters/varsity_letters/01/36/x-400.png);
+}*/
 

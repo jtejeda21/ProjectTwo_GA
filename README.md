@@ -1,7 +1,7 @@
-# ProjectTwo_GA
+# Project Two GA
+----------------
 
-
-## MVP / Necessary features:
+### MVP / Necessary features:
 
 
 - An interactive board which renders on page load.
@@ -14,7 +14,7 @@
 
 
 
-## Intermediate features:
+### Intermediate features:
 
 
 - The game should end when there is a winner, or if the game is a tie.
@@ -29,7 +29,7 @@
 
 
 
-## Strech goals/ Advanced features:
+### Strech goals/ Advanced features:
 
 
 - An option to play vs. a computer with AI
@@ -42,20 +42,26 @@
 ------------------------------------------------------------------------------------------------------------------------------
 
 
-## User story:
+### User story:
 
-Once link is open, page contents will load.  
 
-Player one and two will have the opportunity to enter their names which will display on screen.  
+1. As a user, when I open the page, I want to be able to see the game board and a start button, so that I can begin the game
 
-First player will default to the X marker while Player 2 will be Y.  
-
-Each player will be able to choose an open space on the board to place their marker.  One time, each turn.  
-
-Once one of either players has reached 3 markers in a row, that player is declared the winner.
-
+2. As a user, I want to be able to enter my name and have it display on the page, so that I know whether or not it is my turn
+  
+<!-- 
+2a. [Technical] How am i getting user input?
+2b. [Technical] how am i alerting the user that it’s there turn. css? an image? -->
+ 
+3. Less of a user a story and more of a technical design choice
+ 
+4. As a user when I click a tile I want my token to be placed in there, so that I can make a move.
+ 
+5. As the second player I want to be able to place my token after player one so that we can compete
+  
+6. As a user I should only be able to place one marker each turn
 
 ------------------------------------------------------------------------------------------------------------------------------
 
 
-## Resources and credits
+### Resources and credits:
