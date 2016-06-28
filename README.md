@@ -45,17 +45,15 @@
 ### User story:
 
 
-1. As a user, when I open the page, I want to be able to see the game board and a start button, so that I can begin the game
+- As a user, when I open the page, I want to be able to see the game board and a start button, so that I can begin the game
 
-2. As a user, I want to be able to enter my name and have it display on the page, so that I know whether or not it is my turn
+- As a user, I want to be able to enter my name and have it display on the page, so that I know whether or not it is my turn
  
-3. Less of a user a story and more of a technical design choice
+- As a user when I click a tile I want my token to be placed in there, so that I can make a move
  
-4. As a user when I click a tile I want my token to be placed in there, so that I can make a move.
- 
-5. As the second player I want to be able to place my token after player one so that we can compete
+- As the second player I want to be able to place my token after player one so that we can compete
   
-6. As a user I should only be able to place one marker each turn
+- As a user I should only be able to place one marker each turn
 
 ------------------------------------------------------------------------------------------------------------------------------
 
