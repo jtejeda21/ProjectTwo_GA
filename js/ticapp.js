@@ -9,32 +9,23 @@ window.onload = function() {
 })
 }
 
+var tiles = document.querySelectorAll('.exo')
+	for (i = 0; i < tiles.length; i++) {
+		tiles[i].onclick = function() {
+			console.log(tiles)
+		}
+	}
+//onclick html  
+//clickpost(pos)
 
+// get getElementById(pos).innerHTML = "x"
+// getElementById
 
 
 // var xWin = []
 // var yWin = []
 
 var currentPlayer = 1;
-//game begins with player one defaulting to x
-//add event listener to id "1-9" 'click'
-//did x or O click
-
-
-}
-var gameOn = function() {
-	if (currentPlayer == 1) {
-		this.innerHTML = "x";
-		tiles.push(this);
-		console.log(this)
-		// currentPlayer == false
-
-	}
-}
-
-// 	document.querySelectorAll(".exo").addEventListener('click', function() {
-// 	this.classList.add("ex")
-// })
 
 //if innerhtml is not blank add
 // if current player is 1, the tiles innerhtml = x
@@ -42,6 +33,21 @@ var gameOn = function() {
 // else 
 // 	innerhtml = o
 // 	currentPlayer =1
+
+
+// var gameOn = function() {
+// 	if (currentPlayer == 1) {
+// 		this.innerHTML = "x";
+// 		tiles.push(this);
+// 		console.log(this)
+// 		// currentPlayer == false
+
+// 	}
+// }
+
+
+
+
 
 
 
