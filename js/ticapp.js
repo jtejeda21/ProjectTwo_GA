@@ -4,8 +4,8 @@ window.onload = function() {
 	document.querySelector('#start-button').addEventListener('click', function() {
 	var name1 = prompt("PLAYER 1! What's your name?", "Name ");
  	var name2 = prompt("PLAYER 2! Whats your name?", "Name ");
- 	document.getElementById("playerOne").innerHTML = name1 + " is the X\'s";
- 	document.getElementById("playerTwo").innerHTML = name2 + " is the O\'s";
+ 	document.getElementById("playerOne").innerHTML = name1 + " = X\'s";
+ 	document.getElementById("playerTwo").innerHTML = name2 + " = O\'s";
 })
 }
 // make tiles clickable
