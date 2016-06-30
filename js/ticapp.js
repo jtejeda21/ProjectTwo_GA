@@ -1,31 +1,33 @@
 window.onload = function() {
 	//when new game button is clicked, it will prompt each 
-	//player to enter their name
+	//player to enter their name then append player names to the board
 	document.querySelector('#start-button').addEventListener('click', function() {
-	var name1 = prompt("PLAYER 1! What's your name?", "Name");
- 	var name2 = prompt("PLAYER 2! Whats your name?", "Name");
- 	document.getElementById("playerOne").innerHTML = name1;
- 	document.getElementById("playerTwo").innerHTML = name2;
+	var name1 = prompt("PLAYER 1! What's your name?", "Name ");
+ 	var name2 = prompt("PLAYER 2! Whats your name?", "Name ");
+ 	document.getElementById("playerOne").innerHTML = name1 + " is the X\'s";
+ 	document.getElementById("playerTwo").innerHTML = name2 + " is the O\'s";
 })
 }
-
+//make tiles clickable
 var tiles = document.querySelectorAll('.exo')
 	for (i = 0; i < tiles.length; i++) {
 		tiles[i].onclick = function() {
-			console.log(tiles)
+			if (currentPlayer === 'X') {
+			this.innerHTML = 'X'
+		} else {
+			this.innerHTML = 'O'
+		}
+			console.log(currentPlayer)
+			takeTurns()
+			console.log(currentPlayer)
 		}
 	}
-//onclick html  
-//clickpost(pos)
-
-// get getElementById(pos).innerHTML = "x"
-// getElementById
 
 
 // var xWin = []
 // var yWin = []
 
-var currentPlayer = 1;
+var currentPlayer = 'X';
 
 //if innerhtml is not blank add
 // if current player is 1, the tiles innerhtml = x
@@ -34,19 +36,20 @@ var currentPlayer = 1;
 // 	innerhtml = o
 // 	currentPlayer =1
 
-
-// var gameOn = function() {
-// 	if (currentPlayer == 1) {
-// 		this.innerHTML = "x";
-// 		tiles.push(this);
-// 		console.log(this)
-// 		// currentPlayer == false
-
-// 	}
-// }
+var takeTurns = function() {
+    if (currentPlayer == 'X') {
+        currentPlayer = 'O';
+    } else {
+        currentPlayer = 'X';
+    } 
+}
 
 
 
+
+function resetBoard() {
+    location.reload(true);
+}
 
 
 
@@ -58,6 +61,9 @@ var currentPlayer = 1;
 
 // NOT IN USE /////////////////////////////////////////////////////////////////////////////////////////////
 
+// var gameOn = function(tiles) {
+// 	document.getElementById(tiles.id).innerHTML = currentPlayer;
+// }
 
 // var clicker = function () {
 // 	var tiles = document.querySelectorAll(".exo");
@@ -80,6 +86,18 @@ var currentPlayer = 1;
 	// 	var changeName = document.getElementById('#playerOne');
 	// 	enter.appendChild(changeName);
 	// })
+
+//onclick html  
+//clickpost(pos)
+
+// get getElementById(pos).innerHTML = "x"
+// getElementById
+
+// if (currentPlayer == 1) {
+	// 	this.innerHTML = "x";
+	// 	tiles.push(this);
+	// 	console.log(this)
+		// currentPlayer == false
 
 // CONSTRUCTOR FUNCTIONS TRIAL //
 // var Tictac = {
