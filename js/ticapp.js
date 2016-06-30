@@ -1,6 +1,6 @@
 window.onload = function() {
-	//when new game button is clicked, it will prompt each 
-	//player to enter their name then append player names to the board
+	// when new game button is clicked, it will prompt each 
+	// player to enter their name then append player names to the board
 	document.querySelector('#start-button').addEventListener('click', function() {
 	var name1 = prompt("PLAYER 1! What's your name?", "Name ");
  	var name2 = prompt("PLAYER 2! Whats your name?", "Name ");
@@ -8,24 +8,37 @@ window.onload = function() {
  	document.getElementById("playerTwo").innerHTML = name2 + " is the O\'s";
 })
 }
-//make tiles clickable
+// make tiles clickable
+// Need to prevent changing a tile that’s already set.
 var tiles = document.querySelectorAll('.exo')
 	for (i = 0; i < tiles.length; i++) {
 		tiles[i].onclick = function() {
-			if (currentPlayer === 'X') {
-			this.innerHTML = 'X'
-		} else {
-			this.innerHTML = 'O'
-		}
-			console.log(currentPlayer)
-			takeTurns()
-			console.log(currentPlayer)
+			if(this.innerHTML === ''){
+				if (currentPlayer === 'X') {
+					this.innerHTML = 'X'
+				} else {
+					this.innerHTML = 'O'
+			  	}
+				console.log(currentPlayer)
+				takeTurns()
+				console.log(currentPlayer)
+			} else {
+				console.log('already clicked')
+			}
+			
 		}
 	}
 
+var tileWin = [[0,1,2], [3,4,5], [6,7,8], [0,3,6], 
+			  [1,4,7], [2,5,8], [0,4,8], [2,4,6]];
 
-// var xWin = []
-// var yWin = []
+
+
+// check my x array, does the tileWin at the 
+// position im checking have those three numbers?
+// xarray.indexOf(tileWinThatWereOninLoop[0])
+// xarray.indexOf(tileWinThatWereOninLoop[1])
+// xarray.indexOf(tileWinThatWereOninLoop[2])
 
 var currentPlayer = 'X';
 
@@ -41,7 +54,7 @@ var takeTurns = function() {
         currentPlayer = 'O';
     } else {
         currentPlayer = 'X';
-    } 
+      } 
 }
 
 
