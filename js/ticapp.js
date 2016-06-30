@@ -23,7 +23,7 @@ var tiles = document.querySelectorAll('.exo')
 				takeTurns()
 				console.log(currentPlayer)
 			} else {
-				console.log('already clicked')
+				alert('This spot is taken')
 			}
 			
 		}
@@ -36,11 +36,12 @@ var tileWin = [[0,1,2], [3,4,5], [6,7,8], [0,3,6],
 
 // check my x array, does the tileWin at the 
 // position im checking have those three numbers?
-// xarray.indexOf(tileWinThatWereOninLoop[0])
-// xarray.indexOf(tileWinThatWereOninLoop[1])
-// xarray.indexOf(tileWinThatWereOninLoop[2])
+
 
 var currentPlayer = 'X';
+
+var playerEx = []
+var PlayerOh = []
 
 //if innerhtml is not blank add
 // if current player is 1, the tiles innerhtml = x
@@ -57,11 +58,16 @@ var takeTurns = function() {
       } 
 }
 
-
-
-
-function resetBoard() {
-    location.reload(true);
+// xarray.indexOf(tileWinThatWereOninLoop[0])
+// xarray.indexOf(tileWinThatWereOninLoop[1])
+// xarray.indexOf(tileWinThatWereOninLoop[2])
+var isWin = function() {
+	for (var i = 0; i < tileWin.length; i++) {
+		if('X' === tileWin[0]) {
+		// if (playerEx === 'X' && playerEx === indexOf(tileWin[0]));
+			alert(name1 + ' is the winner!!!!')
+		}
+	}
 }
 
 
@@ -73,6 +79,10 @@ function resetBoard() {
 
 
 // NOT IN USE /////////////////////////////////////////////////////////////////////////////////////////////
+
+//function resetBoard() {
+//     location.reload(true);
+// }
 
 // var gameOn = function(tiles) {
 // 	document.getElementById(tiles.id).innerHTML = currentPlayer;
